@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Gustavorodriguezpc">
+<title>Oscar Carrillo | Fairfolio</title>
+<style>
+:root{
+  --bg:#fbf6f1; --paper:#fffdf9; --ink:#1a1715; --muted:#665e58;
+  --line:#d9c5b9; --accent:#a6542d; --accent2:#d8a37d; --soft:#f8ebe1;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#f7ede5,#fbf6f1 250px);font:12px/1.45 Tahoma,Verdana,sans-serif;color:var(--ink)}
+a{color:#844020;text-decoration:none}
+.wrap{width:860px;max-width:calc(100vw - 20px);margin:auto}
+.top{padding:14px 0 0}
+.bar{border:1px solid var(--line);border-radius:14px 14px 0 0;background:linear-gradient(180deg,#ba673b,#99502d);color:#fff;padding:10px 16px;font:700 12px Tahoma,Verdana,sans-serif;display:flex;justify-content:space-between}
+.shell{border:1px solid var(--line);border-top:none;border-radius:0 0 14px 14px;background:var(--paper);overflow:hidden}
+.nav{padding:10px 16px;background:#f6ece4;border-bottom:1px solid var(--line);display:flex;gap:16px;flex-wrap:wrap;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.nav a{color:#71584a}
+.hero{padding:24px 20px 18px}
+.k{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.head{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:start}
+h1{margin:0 0 10px;font:normal 58px/.95 "Bookman Old Style","URW Bookman",Georgia,serif;letter-spacing:-1.8px}
+.hero p{margin:0;font:22px/1.12 "Bookman Old Style","URW Bookman",Georgia,serif;color:#665d57;max-width:520px}
+.panel{background:var(--soft);border:1px solid #e1c8b8;border-radius:12px;padding:12px}
+.panel h3{margin:0 0 7px;font:normal 19px "Bookman Old Style","URW Bookman",Georgia,serif;color:#7d3b1e}
+.panel p{margin:0;font-size:10px;color:#4d4540}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-block;padding:7px 10px;border-radius:7px;border:1px solid #d6b5a0;background:#fff2e8;font-size:10px;font-weight:bold;color:#7a391c}
+.section{padding:18px 20px;border-top:1px solid #ead8cb}
+.section h2{margin:0 0 5px;font:normal 30px "Bookman Old Style","URW Bookman",Georgia,serif}
+.sub{font-size:10px;color:#7a726b;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.card{border:1px solid #e3d0c3;border-radius:10px;padding:12px;background:#fffaf5}
+.card h3{margin:0 0 6px;font:normal 21px "Bookman Old Style","URW Bookman",Georgia,serif;color:#823c1f}
+.card p{margin:0;font-size:10px;color:#49433f}
+.skills{display:flex;gap:6px;flex-wrap:wrap}
+.skill{padding:4px 8px;border-radius:999px;border:1px solid #e0cdbf;background:#fbf3ed;font-size:9px}
+.footer{text-align:center;color:#7f756e;font-size:9px;padding:20px 0 26px}
+@media(max-width:700px){.head,.grid{grid-template-columns:1fr} h1{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap top">
+  <div class="bar"><div>FAIRFOLIO / OSCAR</div><a style="color:#fff" href="/logout">log out</a></div>
+  <div class="shell">
+    <nav class="nav"><a href="#home">Home</a><a href="#archive">Archive</a><a href="#toolkit">Toolkit</a><a href="#resume">Résumé</a></nav>
+    <section class="hero" id="home">
+      <div class="k">Electrical Engineering · University of South Florida</div>
+      <div class="head">
+        <div>
+          <h1>Oscar Carrillo</h1>
+          <p>Controls, embedded systems, optimization, and dynamic stabilization.</p>
+          <div class="buttons">
+            <a class="btn" href="/resume.pdf">Download Résumé ↓</a>
+          </div>
+        </div>
+        <aside class="panel">
+          <h3>Current focus.</h3>
+          <p>Controls work built around embedded systems, Jetson + Teensy integration, actuator communication, PID control, and offline optimization.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="section" id="archive">
+      <h2>Engineering archive.</h2>
+      <div class="sub">What I did.</div>
+      <div class="grid">
+        <article class="card"><h3>Led.</h3><p>Leads the controls subteam for a student-built lower-limb exoskeleton developed with the CARRT Lab.</p></article>
+        <article class="card"><h3>Designed.</h3><p>Develops CAN-based communication between Teensy 4.1 microcontrollers and a Jetson Orin Nano Super for actuator and IMU data.</p></article>
+        <article class="card"><h3>Built.</h3><p>Creates offline CMA-ES controller-tuning pipelines in Python for gait-phase-specific assistance parameters.</p></article>
+        <article class="card"><h3>Coordinated.</h3><p>Served in math leadership, fundraising, competition logistics, and peer instruction before entering the engineering program.</p></article>
+        <article class="card"><h3>Stabilized.</h3><p>Developing a PID control algorithm for a triple-pendulum system, with emphasis on feedback tuning, disturbance response, and maintaining dynamic stability.</p></article>
+        <article class="card"><h3>Controlled.</h3><p>Developing PID-based spoon stabilization to keep the utensil level as the handle moves, using closed-loop feedback to reject motion and orientation disturbances.</p></article>
+      </div>
+    </section>
+    <section class="section" id="toolkit">
+      <h2>Toolkit.</h2>
+      <div class="skills">
+        <span class="skill">Embedded Systems</span><span class="skill">Teensy 4.1</span>
+        <span class="skill">Jetson Orin Nano</span><span class="skill">SolidWorks</span>
+        <span class="skill">Circuit Prototyping</span><span class="skill">Python</span><span class="skill">PID Control</span><span class="skill">Dynamic Systems</span>
+        <span class="skill">English / Spanish</span>
+      </div>
+    </section>
+    <section class="section" id="resume">
+      <h2>Résumé.</h2>
+      <div class="sub">Stored locally on the ESP32.</div>
+      <div class="buttons"><a class="btn" href="/resume.pdf">Open local résumé</a></div>
+    </section>
+  </div>
+  <div class="footer">Local résumé works offline</div>
+</div>
+</body>
+</html>

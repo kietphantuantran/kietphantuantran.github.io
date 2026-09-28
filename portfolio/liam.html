@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Gustavorodriguezpc">
+<title>Liam Taylor | Fairfolio</title>
+<style>
+:root{
+  --bg:#eef2f3; --paper:#ffffff; --ink:#151719; --muted:#56616a;
+  --line:#c5ced3; --dark:#20262d; --dark2:#2b343d; --accent:#8aa48c; --accent2:#d6e0d8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#edf1f2,#eef2f3 220px);font:12px/1.45 "Trebuchet MS",Verdana,sans-serif;color:var(--ink)}
+a{color:#1e4558;text-decoration:none}
+.wrap{width:920px;max-width:calc(100vw - 20px);margin:auto}
+.top{padding:14px 0 0}
+.bar{border:1px solid #39444b;border-radius:14px 14px 0 0;background:linear-gradient(180deg,var(--dark2),var(--dark));color:#fff;padding:10px 16px;font:700 12px Tahoma,Verdana,sans-serif;display:flex;justify-content:space-between}
+.shell{border:1px solid var(--line);border-top:none;border-radius:0 0 14px 14px;background:var(--paper);overflow:hidden}
+.nav{padding:10px 16px;background:#f4f7f7;border-bottom:1px solid var(--line);display:flex;gap:16px;flex-wrap:wrap;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.nav a{color:#5a666d}
+.hero{padding:24px 22px 20px;background:linear-gradient(180deg,#fdfefe,#f7f9f9)}
+.k{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#6b7277;margin-bottom:7px}
+h1{margin:0 0 10px;font:normal 52px/.94 "Trebuchet MS",Verdana,sans-serif;letter-spacing:-1.8px;max-width:660px}
+.lead{margin:0;font:22px/1.14 "Trebuchet MS",Verdana,sans-serif;color:#56626a;max-width:700px}
+.hero-copy{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.stat{border:1px solid #d4dcdf;background:#fbfcfc;border-radius:12px;padding:11px 10px}
+.stat b{display:block;font:normal 28px/1 "Trebuchet MS",Verdana,sans-serif;color:#24313a;margin-bottom:3px}
+.stat span{font-size:9px;color:#677279;text-transform:uppercase;letter-spacing:.1em}
+.side{background:#edf2ee;border:1px solid #d4dbd5;border-radius:12px;padding:13px}
+.side h3{margin:0 0 7px;font:normal 19px "Trebuchet MS",Verdana,sans-serif;color:#2a3c2e}
+.side p{margin:0;font-size:10px;color:#4a5551}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-block;padding:7px 10px;border:1px solid #a8b8ae;border-radius:7px;background:#f0f5f1;color:#244653;font-size:10px;font-weight:bold}
+.btn.dark{background:#e5ece7}
+.section{padding:20px 22px;border-top:1px solid #e0e6e8}
+.section h2{margin:0 0 5px;font:normal 29px "Trebuchet MS",Verdana,sans-serif}
+.sub{font-size:10px;color:#768087;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.card{border:1px solid #d7dfe2;border-radius:12px;padding:12px;background:#fafcfc}
+.card h3{margin:0 0 6px;font:normal 21px "Trebuchet MS",Verdana,sans-serif;color:#25343d}
+.card p{margin:0;font-size:10px;color:#40494f}
+.skills{display:flex;gap:6px;flex-wrap:wrap}
+.skill{padding:4px 8px;border-radius:999px;border:1px solid #d2dadd;background:#f8fafb;font-size:9px}
+.footer{text-align:center;color:#727a80;font-size:9px;padding:20px 0 26px}
+@media(max-width:760px){.hero-copy,.grid,.stats{grid-template-columns:1fr} h1{font-size:42px}}
+
+.photo-strip{display:grid;grid-template-columns:1fr 1.45fr 1fr;gap:9px;margin-top:16px}
+.photo-strip figure{margin:0;border:1px solid #d7dfe2;border-radius:10px;overflow:hidden;background:#f4f6f7}
+.photo-strip img{display:block;width:100%;height:190px;object-fit:cover}
+.photo-strip figcaption{padding:6px 7px;font-size:9px;color:#58636b}
+@media(max-width:760px){.photo-strip{grid-template-columns:1fr}.photo-strip img{height:auto;max-height:440px}}
+
+</style>
+</head>
+<body>
+<div class="wrap top">
+  <div class="bar"><div>FAIRFOLIO / LIAM</div><a style="color:#fff" href="/logout">log out</a></div>
+  <div class="shell">
+    <nav class="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#toolkit">Toolkit</a></nav>
+    <section class="hero" id="home">
+      <div class="k">Tampa, FL · Electrical Engineering, USF</div>
+      <div class="hero-copy">
+        <div>
+          <h1>Building systems that carry real load , electrical, mechanical, and organizational.</h1>
+          <p class="lead">Electrical Engineering undergraduate at USF concentrating in power systems, with production-floor battery experience, undergraduate research, and project leadership in IEEE EXO.</p>
+          <div class="buttons">
+            <a class="btn" href="https://buttonoperator.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Full portfolio ↗</a>
+          </div>
+          
+          <div class="photo-strip">
+            <figure>
+              <img src="https://buttonoperator.github.io/portfolio/assets/headshot/liam-headshot.jpg"
+                   alt="Liam Taylor headshot"
+                   onerror="this.closest('figure').style.display='none'">
+              <figcaption>Liam Taylor</figcaption>
+            </figure>
+            <figure>
+              <img src="https://buttonoperator.github.io/portfolio/assets/exo/leadership-1.jpg"
+                   alt="Liam Taylor at an IEEE EXO event"
+                   onerror="this.closest('figure').style.display='none'">
+              <figcaption>IEEE EXO leadership</figcaption>
+            </figure>
+            <figure>
+              <img src="https://buttonoperator.github.io/portfolio/assets/lithionics/floor-work.jpg"
+                   alt="Lithium battery production floor work"
+                   onerror="this.closest('figure').style.display='none'">
+              <figcaption>Battery production work</figcaption>
+            </figure>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><b>2</b><span>Degrees</span></div>
+            <div class="stat"><b>4</b><span>Active Projects</span></div>
+            <div class="stat"><b>$5,000</b><span>Budget Led on IEEE EXO</span></div>
+          </div>
+        </div>
+        <aside class="side">
+          <h3>About.</h3>
+          <p>From jobsites to circuit boards: hands-on construction work, lithium battery production testing, undergraduate research, and club leadership all feed into how Liam approaches engineering problems.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Selected work.</h2>
+      <div class="sub">Leadership, embedded systems, web development, and power / battery work.</div>
+      <div class="grid">
+        <article class="card"><h3>IEEE EXO</h3><p>Coordinates six subsystem teams for a robotic gait-assist leg system, wrote governance and requirements structure, and manages phased design progress.</p></article>
+        <article class="card"><h3>Mime</h3><p>Gesture-controlled robotic hand using ESP32 + PCA9685 with computer-vision and flex-sensor input modes for real-time actuation.</p></article>
+        <article class="card"><h3>TROPICS Lab</h3><p>Undergraduate research on noninvasive blood-glucose measurement validation and device miniaturization work.</p></article>
+        <article class="card"><h3>Court Commander</h3><p>Browser-based volleyball coaching app with live scoring, rotations, lineup planning, match history, and stats export.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>Work history.</h2>
+      <div class="sub">Recent work.</div>
+      <div class="grid">
+        <article class="card"><h3>Lithionics</h3><p>Assembly Technician 2 performing first-article and discharge-testing inspections on UL-certified battery systems and building production test improvements.</p></article>
+        <article class="card"><h3>TE Taylor Co.</h3><p>Assistant foreman coordinating crews, schedules, and site conditions in commercial ADA-compliant concrete and drainage work.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="toolkit">
+      <h2>Toolkit.</h2>
+      <div class="skills">
+        <span class="skill">C</span><span class="skill">Python</span><span class="skill">MATLAB / Simulink</span>
+        <span class="skill">HTML / JS / CSS</span><span class="skill">ESP32</span><span class="skill">STM32</span>
+        <span class="skill">KiCad</span><span class="skill">OpenCV</span><span class="skill">MediaPipe</span>
+        <span class="skill">Battery Testing</span><span class="skill">Power Systems</span>
+      </div>
+    </section>
+  </div>
+  <div class="footer">Public photos and full portfolio link require internet</div>
+</div>
+</body>
+</html>

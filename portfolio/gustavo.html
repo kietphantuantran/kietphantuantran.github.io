@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Gustavorodriguezpc">
+<title>Gustavo Rodriguez | Fairfolio</title>
+<style>
+:root{
+  --bg:#f8f6f2;
+  --paper:#fffdf9;
+  --ink:#171717;
+  --soft:#6a6d78;
+  --line:#a9acb8;
+  --tab:#dbe4f6;
+  --tab2:#edf2fb;
+  --accent:#6a88b5;
+  --accent2:#b893cf;
+  --tile:#f0f4fb;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--ink);scroll-behavior:smooth}
+body{margin:0;font:12px/1.45 "Palatino Linotype","Book Antiqua",Palatino,serif;background:var(--bg);color:var(--ink)}
+a{color:#294f88;text-decoration:none}
+a:hover{opacity:.82}
+.wrap{width:860px;max-width:calc(100vw - 18px);margin:0 auto}
+.chrome{padding-top:14px}
+.tabbar{display:flex;gap:5px;align-items:flex-end;flex-wrap:wrap}
+.tab{
+  padding:8px 14px 7px;border:1px solid var(--line);border-bottom:none;
+  border-radius:11px 11px 0 0;background:var(--tab2);font:700 12px Verdana,Tahoma,sans-serif;color:#34445c
+}
+.tab.main{background:var(--tab);color:#23344e}
+.strip{border:1px solid var(--line);background:var(--paper);border-radius:0 10px 10px 10px;overflow:hidden}
+.subnav{display:flex;gap:18px;flex-wrap:wrap;padding:9px 14px;background:#eef2f8;border-bottom:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.subnav a{color:#48536a}
+.hero{padding:28px 26px 18px}
+.eyebrow{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin-bottom:8px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+h1{margin:0 0 10px;font:normal 60px/.92 "Palatino Linotype","Book Antiqua",Palatino,serif;letter-spacing:-2.2px}
+.dek{font:25px/1.08 "Palatino Linotype","Book Antiqua",Palatino,serif;color:#5d6678;max-width:470px;margin:0 0 16px}
+.meta{font-size:11px;color:#656f7d}
+.card{
+  border:1px solid var(--line);background:linear-gradient(180deg,#f3f6fc,#eef2fa);
+  border-radius:12px;padding:14px 14px 12px
+}
+.card h3{margin:0 0 7px;font:normal 21px "Palatino Linotype","Book Antiqua",Palatino,serif}
+.card p{margin:0;color:#495261;font-size:10px;line-height:1.45}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.btn{
+  display:inline-block;padding:7px 10px;border:1px solid #8f96a4;border-radius:7px;background:#f4f7fc;
+  color:#1f2d45;font-weight:bold;font-size:10px
+}
+.btn.primary{background:#dce8fb}
+.btn.alt{background:#f4eef9}
+.current{
+  margin:0 26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:8px 0;font-size:10px;color:#5d6470;display:flex;gap:10px;align-items:center
+}
+.current b{font:normal 14px "Palatino Linotype","Book Antiqua",Palatino,serif;color:#2d3750}
+.section{padding:18px 26px 22px;border-bottom:1px solid #d6d9e2}
+.section:last-of-type{border-bottom:none}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:10px}
+.section h2{margin:0;font:normal 31px/.95 "Palatino Linotype","Book Antiqua",Palatino,serif}
+.sub{font-size:10px;color:#727988}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.tile{border:1px solid var(--line);border-radius:10px;background:var(--tile);padding:12px 12px 11px}
+.tile h3{margin:0 0 6px;font:normal 21px "Palatino Linotype","Book Antiqua",Palatino,serif}
+.tile p{margin:0;font-size:10px;color:#434a58;line-height:1.42}
+.rows{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:125px 1fr 110px;gap:12px;border-top:1px solid #d7dbe3;padding:10px 0}
+.row:first-child{border-top:none;padding-top:0}
+.row b{font:normal 17px "Palatino Linotype","Book Antiqua",Palatino,serif}
+.row p{margin:0;color:#444b58;font-size:10px}
+.row span{font-size:9px;color:#7d8490;text-align:right}
+.skillwrap{display:flex;gap:6px;flex-wrap:wrap}
+.skill{padding:4px 8px;border:1px solid #b8bcc8;background:#f3f6fb;border-radius:999px;font-size:9px}
+.footer{padding:18px 0 26px;text-align:center;color:#6e7480;font-size:9px}
+@media(max-width:700px){
+  .hero-grid,.tiles{grid-template-columns:1fr}
+  h1{font-size:46px}
+  .dek{font-size:22px}
+  .row{grid-template-columns:1fr}
+  .row span{text-align:left}
+}
+
+.gustavo-photo{border:1px solid #a9acb8;border-radius:11px;background:#eef2f8;padding:7px;margin-bottom:10px}
+.gustavo-photo img{display:block;width:100%;height:210px;object-fit:cover;object-position:center 25%;border-radius:7px;background:#dfe5ef}
+.gustavo-photo small{display:block;padding:6px 2px 1px;color:#626b7a;font-size:9px;text-align:center}
+
+</style>
+</head>
+<body>
+<div class="wrap chrome">
+  <div class="tabbar">
+    <div class="tab main">◎ Gustavo</div>
+    <div class="tab">Projects</div>
+    <div class="tab">Work</div>
+    <div class="tab">About</div>
+    <div class="tab">Résumé</div>
+  </div>
+  <div class="strip">
+    <nav class="subnav">
+      <a href="#home">Home</a>
+      <a href="#focus">Focus</a>
+      <a href="#archive">Archive</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#credentials">Credentials</a>
+      <a href="/logout">Log out</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="eyebrow">Fairfolio / Gustavo Rodriguez</div>
+      <div class="hero-grid">
+        <div>
+          <h1>Build. Test.<br>Repeat.</h1>
+          <p class="dek">Mechanical engineering, reliability + robotics.</p>
+          <div class="meta">Gustavo Rodriguez · University of South Florida · Tampa, FL</div>
+          <div class="buttons">
+            <a class="btn primary" href="/resume.pdf">Download Résumé ↓</a>
+            <a class="btn" href="https://gustavriguez.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Live Portfolio ↗</a>
+            <a class="btn alt" href="https://www.linkedin.com/in/gustavo33/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+        <aside class="card">
+
+          <div class="gustavo-photo">
+            <img src="https://gustavriguez.github.io/Portfolio/gustavo-headshot-horizontal.webp"
+                 alt="Gustavo Rodriguez"
+                 onerror="this.style.display='none';this.nextElementSibling.textContent='Gustavo Rodriguez';">
+            <small>Gustavo Rodriguez</small>
+          </div>
+          <h3>Current file.</h3>
+          <p>Mechanical engineering student working across reliability engineering, lower-limb exoskeleton development, biomechanics, controls, and manufacturing systems. This local version keeps the essentials clean and quick to load on the ESP32.</p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="current"><b>Current file</b><div>Spring / Summer 2027 internship search · Lonza reliability · IEEE EXO · CARRT biomechanics</div></div>
+
+    <section class="section" id="focus">
+      <div class="section-head">
+        <h2>Focus areas.</h2>
+        <div class="sub">What I work on.</div>
+      </div>
+      <div class="tiles">
+        <article class="tile"><h3>Lead.</h3><p>Drive IEEE EXO work across mechanical design, gait-data planning, integration, testing, documentation, and team coordination.</p></article>
+        <article class="tile"><h3>Investigate.</h3><p>Handle reliability and equipment issues in manufacturing spaces through root-cause work, maintenance systems, and process documentation.</p></article>
+        <article class="tile"><h3>Build.</h3><p>Create practical tools in MATLAB, Power Apps, SharePoint, and embedded systems that support engineering work on the floor.</p></article>
+        <article class="tile"><h3>Model.</h3><p>Connect gait demand to actuator torque, current draw, power use, and battery requirements through OpenSim and MATLAB workflows.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="archive">
+      <div class="section-head">
+        <h2>Engineering archive.</h2>
+        <div class="sub">Selected work.</div>
+      </div>
+      <div class="rows">
+        <div class="row"><b>IEEE EXO</b><p>Project lead for a unilateral lower-limb assistive exoskeleton using AK80-9 actuators, Teensy controllers, Jetson compute, IMUs, FSRs, CAN communication, battery-system modeling, OpenSim, and gait-analysis work.</p><span>Robotics · biomechanics</span></div>
+        <div class="row"><b>Lonza</b><p>Equipment failure investigation, troubleshooting, maintenance systems, asset labeling, controlled documentation, cleaning tracking, CAPA support, and reliability-focused engineering work.</p><span>Reliability · manufacturing</span></div>
+        <div class="row"><b>OpenSim / gait</b><p>Biomechanical data workflow for comparing gait conditions and translating hip and knee demand into actuator, current, power, and battery requirements.</p><span>Simulation · MATLAB</span></div>
+        <div class="row"><b>Process Tracker</b><p>Power Apps and SharePoint manufacturing-room board for active, paused, handoff, archived, and voided process states with operational notes and downtime tracking.</p><span>Power Platform</span></div>
+        <div class="row"><b>CARRT</b><p>Human-motion and biomechanics work using measurement, data review, and experimental interpretation to support assistive-device development.</p><span>Research</span></div>
+        <div class="row"><b>Shape Fight</b><p>MATLAB game project with gameplay logic, attacks, defense, animations, health tracking, and configurable visuals.</p><span>MATLAB</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="toolkit">
+      <div class="section-head">
+        <h2>Toolkit.</h2>
+        <div class="sub">Software + methods.</div>
+      </div>
+      <div class="skillwrap">
+        <span class="skill">SolidWorks / CAD</span>
+        <span class="skill">MATLAB</span>
+        <span class="skill">OpenSim</span>
+        <span class="skill">Power Apps</span>
+        <span class="skill">SharePoint</span>
+        <span class="skill">Power Automate</span>
+        <span class="skill">ESP32</span>
+        <span class="skill">Teensy</span>
+        <span class="skill">Lean</span>
+        <span class="skill">Six Sigma</span>
+      </div>
+    </section>
+
+    <section class="section" id="credentials">
+      <div class="section-head">
+        <h2>Credentials.</h2>
+        <div class="sub">Selected certifications.</div>
+      </div>
+      <div class="tiles">
+        <article class="tile"><h3>Engineering</h3><p>CSWA Sustainability · Lean Six Sigma Yellow Belt · REC Foundation Pre-Engineering · REC Foundation Robotics</p></article>
+        <article class="tile"><h3>Research / safety</h3><p>CITI research training · ServSafe · NRFSP Food Handler</p></article>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">Résumé works offline · Headshot, GitHub, and LinkedIn require internet</div>
+</div>
+</body>
+</html>
